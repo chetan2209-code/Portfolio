@@ -1,0 +1,304 @@
+/* ### 2. CSS (`style.css`)
+Using CSS Variables for easy color changes and a Glassmorphism effect for cards. */
+
+
+:root {
+    --primary-color: #6366f1;
+    --secondary-color: #a855f7;
+    --dark-bg: #0f172a;
+    --card-bg: rgba(30, 41, 59, 0.7);
+    --text-light: #f8fafc;
+    --text-gray: #94a3b8;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    background: rgba(15, 23, 42, 0.8);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 400;
+    transition: var(--transition);
+}
+
+.nav-links li a:hover {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    color: var(--primary-color);
+    position: relative;
+}
+
+.typewriter {
+    font-size: 1.5rem;
+    color: var(--text-gray);
+    margin-bottom: 2rem;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.secondary {
+    border: 2px solid var(--primary-color);
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+}
+
+/* Sections General */
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 80px 0 40px;
+}
+
+/* about section */
+
+.about{
+    padding: 100px 10%;
+}
+
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text{
+    max-width: 800px;
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.about-text p{
+    font-size: 1.1rem;
+    color: var(--text-gray);
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.about-text p:last-child{
+    margin-bottom: 0;
+}
+
+/* Skills Grid */
+.skills {
+    padding: 100px 10%;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: var(--transition);
+}
+
+.skill-card:hover {
+    background: rgba(99, 102, 241, 0.1);
+    border-color: var(--primary-color);
+    transform: translateY(-10px);
+}
+
+.skill-card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* Projects Grid */
+.projects {
+    padding: 100px 10%;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.project-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.tech-stack {
+    margin: 15px 0;
+}
+
+.tech-stack span {
+    background: rgba(99, 102, 241, 0.2);
+    color: var(--primary-color);
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+}
+
+.project-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* Contact */
+.contact {
+    padding: 100px 10%;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-form input, .contact-form textarea {
+    background: var(--card-bg);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links i {
+    font-size: 2rem;
+    color: var(--text-light);
+    transition: var(--transition);
+}
+
+.social-links i:hover {
+    color: var(--primary-color);
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    color: var(--text-gray);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hero-content h1 { font-size: 2.5rem; }
+}

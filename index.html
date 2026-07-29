@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevPortfolio | Creative Software Engineer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">DEV<span>PORTFOLIO</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-btn"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Hi, I'm <span class="highlight">Chetan Rana</span></h1>
+            <p class="typewriter">Full Stack Developer & Problem Solver</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="resume.pdf" class="btn secondary">Download Resume</a>
+            </div>
+        </div>
+        <div class="hero-shape"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about" data-aos="fade-up">
+        <div class="section-title">About Me</div>
+        <div class="about-container">
+            <div class="about-text">
+                <p>I am a passionate software engineer dedicated to building scalable, user-centric applications. My journey started with a curiosity for how things work on the web, and it has evolved into a professional pursuit of clean code and efficient architecture.</p>
+                <p>Beyond coding, I'm an open-source contributor and a lifelong learner of new frameworks.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="section-title" data-aos="fade-down">Technical Toolbox</div>
+        <div class="skills-grid">
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fa-brands fa-html5"></i>
+                <h3>Frontend</h3>
+                <p>React, Next.js, Tailwind CSS</p>
+            </div>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fa-solid fa-server"></i>
+                <h3>Backend</h3>
+                <p>Node.js, Express, Python, Java</p>
+            </div>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fa-solid fa-database"></i>
+                <h3>Database</h3>
+                <p>MongoDB, PostgreSQL, MySQL</p>
+            </div>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+                <i class="fa-brands fa-github"></i>
+                <h3>Tools</h3>
+                <p>Git, Docker, AWS, Jenkins</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-title" data-aos="fade-up">Featured Work</div>
+        <div class="project-grid">
+            <!-- Project Card 1 -->
+            <div class="project-card" data-aos="flip-left">
+                <div class="project-img">
+                    <img src="https://via.placeholder.com/400x250" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h3>E-Commerce Engine</h3>
+                    <p>A full-scale store with payment integration and admin dashboard.</p>
+                    <div class="tech-stack">
+                        <span>React</span> <span>Node.js</span> <span>Stripe</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                        <a href="#"><i class="fa-solid fa-link"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Card 2 -->
+            <div class="project-card" data-aos="flip-left" data-aos-delay="200">
+                <div class="project-img">
+                    <img src="https://via.placeholder.com/400x250" alt="Project 2">
+                </div>
+                <div class="project-info">
+                    <h3>AI Task Manager</h3>
+                    <p>Task automation tool using GPT-4 for smart scheduling.</p>
+                    <div class="tech-stack">
+                        <span>Python</span> <span>OpenAI</span> <span>React</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                        <a href="#"><i class="fa-solid fa-link"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" data-aos="fade-up">
+        <div class="section-title">Get In Touch</div>
+        <div class="contact-container">
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn primary">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/chetan-rana-0b0293385"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/chetan2209-code"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 YourName. Built with passion and coffee.</p>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- ### Why this is a "Perfect" Portfolio:
+1.  **AOS Integration:** Instead of everything appearing at once, elements slide and fade in as the recruiter scrolls down. This keeps them engaged.
+2.  **Glassmorphism:** The `rgba` backgrounds and `backdrop-filter: blur()` create a high-end, modern look used by Apple and Microsoft.
+3.  **Visual Hierarchy:** The "Hero" section focuses on the value proposition (Who you are $\rightarrow$ Call to Action).
+4.  **Performance:** Minimal external dependencies, fast loading, and responsive for mobile devices.
+5.  **Tech-Focused:** The "Project Grid" emphasizes the **Tech Stack** using labels, making it easy for a recruiter to see your skills without reading long paragraphs. -->
