@@ -17,7 +17,7 @@
 
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="logo">DEV<span>PORTFOLIO</span></div>
+        <div class="logo">MY<span>PORTFOLIO</span></div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -30,15 +30,50 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content" data-aos="fade-up">
-            <h1>Hi, I'm <span class="highlight">Chetan Rana</span></h1>
-            <p class="typewriter">Full Stack Developer & Problem Solver</p>
-            <div class="hero-btns">
-                <a href="#projects" class="btn primary">View Projects</a>
-                <a href="resume.pdf" class="btn secondary">Download Resume</a>
+        <div class="glow-effect"></div>
+
+        <div class="hero-container" data-aos="fade-up">
+            <div class="hero-content">
+                <span class="badge">Welcome to my portfolio</span>
+                <h1>Hi, I'm <span class="highlight">Chetan Rana</span></h1>
+                <p class="typewriter">I am a <span class="typing-text"></span></p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="resume.pdf" class="btn secondary">Download Resume</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                    <h3>2+</h3>
+                    <p>Projects Built</p>
+                </div>
+                <div class="stat-item">
+                    <h3>SPPU</h3>
+                    <p>Engineering Student</p>
+                </div>
             </div>
+                <!-- Social Icons & Scroll Indicator -->
+                <div class="hero-socials">
+                    <a href="https://github.com/chetan2209-code" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/chetan-rana-0b0293385" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#contact"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+
+                <!-- Floating Scroll Down Arrow --> 
+                <a href="#about" class="scroll-down">
+                 <i class="fa-solid fa-chevron-down"></i>
+                </a>
+            </div>
+
+         <!-- Profile Image Area -->
+        <div class="hero-img-box">
+                <div class="img-border">
+                <img src="profile.jpg" alt="Chetan Rana">
+            </div>
+             <!-- Floating Badges -->
+             <div class="tech-badge badge-1"><i class="fa-brands fa-html5"></i> HTML5</div>
+            <div class="tech-badge badge-2"><i class="fa-brands fa-js"></i> JavaScript</div>
         </div>
-        <div class="hero-shape"></div>
+    </div>
     </section>
 
     <!-- About Section -->
@@ -144,7 +179,9 @@
     </footer>
 
     <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <!-- Typed.js Library CDN -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

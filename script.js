@@ -39,3 +39,12 @@ menuBtn.addEventListener('click', () => {
     // You can expand this to show a mobile sidebar
     alert("Mobile menu clicked! Implement a sidebar transition here.");
 });
+
+// Dynamic Typing Animation (Typed.js)
+var typed = new Typed(".typing-text", {
+    strings: ["Frontend Developer", "Engineering Student", "Problem Solver", "Web Developer"],
+    typeSpeed: 80,
+    backSpeed: 50,
+    backDelay: 1500,
+    loop: true
+});
