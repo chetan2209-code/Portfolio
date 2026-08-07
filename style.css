@@ -332,37 +332,125 @@ body {
         transform: translateY(-12px);
     }
 }
-/* about section */
 
-.about{
-    padding: 100px 10%;
+/* About Section Global */
+.about {
+    padding: 100px 8%;
+    position: relative;
+    overflow: hidden;
 }
 
-.about-container{
+.about .section-title span {
+    color: var(--primary-color);
+}
+
+/* 2-Column Responsive Layout */
+.about-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.about-text{
-    max-width: 800px;
+/* Left Grid Info Cards */
+.about-info-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 320px;
+}
+
+.info-card {
     background: var(--card-bg);
-    padding: 40px;
+    padding: 25px;
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-.about-text p{
-    font-size: 1.1rem;
+.info-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+    background: rgba(99, 102, 241, 0.05);
+}
+
+.info-card i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.info-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: var(--text-light);
+}
+
+.info-card p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    opacity: 0.9;
+    margin-bottom: 4px;
+}
+
+.info-card small {
+    font-size: 0.8rem;
     color: var(--text-gray);
-    line-height: 1.8;
-    margin-bottom: 15px;
 }
 
-.about-text p:last-child{
+/* Right Side Text Block */
+.about-text {
+    flex: 1;
+    background: var(--card-bg);
+    padding: 45px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.about-text p {
+    font-size: 1.05rem;
+    color: var(--text-gray);
+    line-height: 1.75;
+    margin-bottom: 20px;
+}
+
+.about-text p:last-child {
     margin-bottom: 0;
+}
+
+/* Responsive Fix for About Section */
+@media (max-width: 900px) {
+    .about-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .about-info-grid {
+        width: 100%;
+        min-width: unset;
+        flex-direction: row;
+    }
+    .info-card {
+        flex: 1;
+    }
+    .about-text {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-info-grid {
+        flex-direction: column;
+    }
 }
 
 /* Skills Grid */
