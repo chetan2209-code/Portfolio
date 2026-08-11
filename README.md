@@ -9,6 +9,7 @@ A sleek, modern, and fully responsive personal portfolio website built with HTML
 - **Scroll Animation**: Smooth fade-in and slide animations using [AOS (Animate On Screen)]
 - **Interactive Design**: Hover effects, typewriter subtitle, and interactive call-to-action buttons.
 - **Responsive Layout**: Fully optimized for desktop, tablets, and mobile devices.
+- **Direct Links**: Quick access to LinkedIn and GitHub Profiles.
 
 # Live link:
 https://chetan2209-code.github.io/Portfolio/
