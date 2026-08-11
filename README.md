@@ -11,5 +11,9 @@ A sleek, modern, and fully responsive personal portfolio website built with HTML
 - **Responsive Layout**: Fully optimized for desktop, tablets, and mobile devices.
 - **Direct Links**: Quick access to LinkedIn and GitHub Profiles.
 
+## Tech Stack ##
+* **Frontend**: HTML5, CSS3, and JavaScript(ES6+)
+* **Icons & Fonts**: Font Awesome 6, Google Fonts (Poppins)
+
 # Live link:
 https://chetan2209-code.github.io/Portfolio/
