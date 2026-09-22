@@ -1,7 +1,3 @@
-// ### 3. JavaScript (`script.js`)
-// This handles the animation initialization and a smooth navbar effect.
-
-
 // Initialize AOS (Animate On Scroll)
 AOS.init({
     duration: 1000, 
